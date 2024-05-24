@@ -3,7 +3,7 @@ const employee1 = {
   age: 20,
 };
 
-const result1 = employee1.scores?.english;
+const result1 = employee1.scores?.english ?? "undefined";
 
 const employee2 = {
   name: "A",
@@ -13,6 +13,6 @@ const employee2 = {
   },
 };
 
-const result2 = employee2.scores?.english ?? "English score is not defined";
+const result2 = employee2.scores.english ?? "English score is not defined";
 console.log(result1);
 console.log(result2);
